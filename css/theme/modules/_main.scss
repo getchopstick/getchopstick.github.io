@@ -1,0 +1,83 @@
+/*
+	module: main
+*/
+
+.main-holder {
+	z-index: 20;
+}
+
+.feature {
+	@include padding-tb(0,1);
+
+	&:last-of-type {
+		padding-bottom: 0;
+	}
+
+}
+
+.centered.feature {
+	text-align: center;
+}
+
+.main-feature-nav {
+	@include horizontal-nav;
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		list-style: none;
+		margin-right: em(14);
+	}
+
+}
+
+.feature-symbol {
+	border-bottom: 1px solid $gamma-ui-color;
+	color: $gamma-ui-color;
+	text-align: center;
+	@include padding-tb(0,.75);
+	@include text-dimensions(24, 1, 1, 0)
+}
+
+.feature-title {
+	color: darken($beta-ui-color,20);
+	@include text-dimensions(30, 1.25, .75, 0)
+}
+
+.main-home-feature h3 {
+	@extend h4;
+	text-align: center;
+}
+
+/* media queries
+------------------------------------------ */
+
+@media (min-width: $bp2) {
+
+	.main-content,
+	.main-feature {
+		@include box-(12,1,1);
+	}
+
+}
+
+@media (min-width: $bp4) {
+
+	.main-feature{
+		@include box-(8,1,1);
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main-home-feature {
+		@include box-(4,1,1);
+
+		h3 {
+			text-align: left;
+		}
+	}
+
+}

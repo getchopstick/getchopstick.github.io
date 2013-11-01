@@ -1,0 +1,76 @@
+// buttons
+
+.alpha.button {
+	// $alpha-ui-color, $beta-ui-color, $textcolor, $gradient: false, $border: false, $text-shadow: 0, $inset-shadow: 0, $box-shadow: 0
+	@include button-color($alpha-ui-color,darken($alpha-ui-color,10),white,false,false,0,0,0);
+}
+
+.beta.button {
+	// $alpha-ui-color, $beta-ui-color, $textcolor, $gradient: false, $border: false, $text-shadow: 0, $inset-shadow: 0, $box-shadow: 0
+	@include button-color($beta-ui-color,darken($beta-ui-color,10),white,false,false,0,0,0);
+}
+
+.small.button {
+	@include button-small;
+}
+
+.tiny.button {
+	@include button-tiny;
+}
+
+.cta.button {
+	@extend .small.button;
+}
+
+// button groups
+
+.button-group {
+	@extend %clearfix;
+	@include list-nav;
+	@include text-dimensions(14,2,1);
+}
+
+.centered.button-group {
+	text-align: center;
+}
+
+@media (min-width: $bp3) {
+
+	.button-group {
+		@include horizontal-nav;
+		// @include text-dimensions(14,1,0);
+
+		// li {
+			// @include px-margin-lr(0,1);
+		// }
+	}
+
+	.centered.button-group {
+
+		text-align: center;
+
+		li,
+		a {
+			display: inline-block;
+			float: none;
+		}
+
+		li {
+			@include px-padding-lr(.5,.5);
+		}
+
+	}
+
+	.cta.button {
+		@include button-big;
+	}
+
+}
+
+@media (min-width: $bp4) {
+
+	.download-button-holder {
+		width: 30%;
+	}
+
+}

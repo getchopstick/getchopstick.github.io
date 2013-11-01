@@ -1,0 +1,246 @@
+/*
+	Frame
+*/
+
+.holder {
+	position: relative;
+	background-color: #fff;
+	@include padding-tb(1,0);
+}
+
+.row {
+	@extend %clearfix;
+	margin: 0 auto;
+	max-width: 36em;
+	@include em-padding-lr(.5,.5);
+
+	.row {
+		padding: 0;
+	}
+
+}
+
+/*
+	Header
+*/
+
+.header-holder {
+	box-shadow: 0 0 4px rgba(black,.25);
+	z-index: 40;
+}
+
+.logo {
+	font-family: $alpha-font-family;
+	width: 230px;
+	text-align: center;
+	font-weight: bold;
+	text-indent: -9999px;
+	@include text-dimensions(16,1,1,0);
+	@include svg-bg("../images/logo", ".png", 0 50%, no-repeat);
+
+	a {
+		color: $alpha-text-color;
+		display: block;
+	}
+}
+
+.logo-animation-fly-one,
+.logo-animation-fly-two {
+	// display: none;
+	position: absolute;
+	width: 6px;
+	height: 4px;
+	border-radius: 6px;
+	border: 1px solid #000;
+}
+
+.logo-animation-fly-one {
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /* IE 9 */
+	-webkit-transform:rotate(45deg); /* Safari and Chrome */
+	top: -4px;
+	left: 8px;
+	// @include fly-animation-one;
+}
+
+.logo-animation-fly-two {
+	top: -4px;
+	left: 11px;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); /* IE 9 */
+	-webkit-transform:rotate(-45deg); /* Safari and Chrome */
+	// @include fly-animation-two;
+}
+
+.logo-animation {
+	position: relative;
+
+	&:hover {
+
+		.logo-animation-fly-one {
+			@include fly-animation-one;
+		}
+
+		.logo-animation-fly-two {
+			@include fly-animation-two;
+		}
+	}
+}
+
+.main-nav,
+.footer-nav {
+	width: 100%;
+	text-align: center;
+
+	ul {
+		@extend %clearfix;
+		font-family: $alpha-font-family;
+		@include list-nav;
+		@include text-dimensions(16,1.5,1,0);
+	}
+
+	a {
+		color: lighten($alpha-text-color,30);
+		text-decoration: none;
+		// @include text-dimensions(ms(0),1,0,0);
+	}
+
+	a:hover,
+	.current a {
+		color: darken($alpha-ui-color,0);
+	}
+
+	.button {
+		@include button-small;
+	}
+
+}
+
+.mobile-nav .main-nav {
+	display: none;
+}
+
+/*
+	Doormat
+*/
+
+.doormat-holder {
+	text-align: center;
+	border-top: 1px solid $gamma-ui-color;
+}
+
+/*
+	Footer
+*/
+
+.footer-holder {
+	// background-color: $alpha-text-color;
+	color: lighten($alpha-text-color,50);
+	padding-top: 0;
+}
+
+
+/* media queries
+------------------------------------------ */
+
+@media (min-width: $bp2) {
+
+	.row {
+		padding: 0;
+
+		.row {
+			@include px-margin-lr(-1,-1);
+		}
+
+	}
+
+	.header,
+	.footer,
+	.doormat {
+		@include box-(12,1,1);
+	}
+
+}
+
+@media (min-width: $bp3) {
+
+	.logo {
+		float: left;
+		@include text-dimensions(14,1.5,1,0);
+	}
+
+	.main-nav {
+		width: auto;
+		float: right;
+
+		ul {
+			@include horizontal-nav();
+			@include text-dimensions(14,1.5,1,0);
+		}
+
+		li {
+			@include px-margin-lr(1,0);
+		}
+
+		// .button {
+		// 	margin-top: -.4em;
+		// }
+
+	}
+
+	.footer-nav {
+
+		ul {
+			@include horizontal-nav;
+			@include text-dimensions(14,1,1,0);
+
+			li {
+				@include px-margin-lr(.5,.5);
+			}
+
+			li,
+			a {
+				display: inline-block;
+				float: none;
+			}
+
+		}
+
+	}
+
+	.main-nav-trigger {
+		display: none;
+	}
+
+}
+
+@media (min-width: $bp4) {
+
+	.holder {
+		@include padding-tb(2,1);
+	}
+
+	.row {
+		max-width: #{$contextGridWidth}px;
+	}
+
+	.header {
+		@include box-(12,1,1);
+	}
+
+	.footer {
+		@include box-(12,1,1);
+	}
+
+	.doormat-holder {
+		padding-bottom: 0;
+	}
+
+	.footer-holder {
+		@include padding-tb(1,1);
+	}
+
+	.doormat-title {
+		@include text-dimensions(ms(1),1,2,0);
+	}
+}

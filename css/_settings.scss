@@ -1,0 +1,58 @@
+//
+//	Chopstick settings
+//
+
+// Typography
+
+$alpha-font-family		: 'Source Sans Pro', sans-serif;
+$alpha-font-size 		: 16;
+$alpha-font-weight		: 400;
+$alpha-line-height 		: 1.5;
+
+$beta-font-family	 	: 'Source Code Pro', sans-serif;
+$beta-font-weight 		: 700;
+
+// Grid
+
+$contextGridGutter	: 60;
+$contextGridColumn	: 40;
+$contextGridColumns	: 12;
+
+// Breakpoints calculated in em's
+
+$bp1: #{320 / $alpha-font-size}em;
+$bp2: #{480 / $alpha-font-size}em;
+$bp3: #{680 / $alpha-font-size}em;
+$bp4: #{960 / $alpha-font-size}em;
+
+// the last breakpoint is calculated in mixins/_grid.scss
+// $bp5: #{1200 / $alpha-font-size}em;
+
+// Modular scale settings
+
+$ratio				: 1.333;
+$importantnumber	: 21;
+$increment			: 1;
+$base-size			: $alpha-font-size/16*1em $importantnumber/16*1em;
+
+// Roundness
+
+$radius: 3px;
+
+// Colors
+
+$alpha-text-color 	: #26252a;
+$beta-text-color 	: #666;
+
+$alpha-ui-color 	: #f6ac49;
+$beta-ui-color		: #6f3744;
+$gamma-ui-color 	: #ccc;
+$delta-ui-color 	: #fff;
+
+// Links
+
+$alpha-link-color 		    : darken($alpha-ui-color, 10);
+$alpha-link-colorhover 		: $alpha-ui-color;
+$alpha-link-colorfocus 		: darken($alpha-link-color, 10);
+$alpha-link-coloractive 	: lighten($alpha-link-color, 10);
+$alpha-link-colorvisited	: darken($alpha-link-color, 5);

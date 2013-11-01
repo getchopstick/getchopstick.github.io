@@ -1,0 +1,197 @@
+@mixin fly-animation-one {
+    -webkit-animation: fly-one 0.7s;
+    animation: fly-one 0.7s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fly-one {
+    0% {
+        top: -4px;
+        left: 8px;
+    }
+    25% {
+        left:-12px;
+        top:-10px;
+    }
+    75% {
+        left: 20px;
+        top:-40px;
+    }
+    100% {
+        left: 40px;
+        top:-23px;
+    }
+}
+
+@keyframes fly-one {
+    0% {
+        top: -4px;
+        left: 8px;
+    }
+    25% {
+        left:-12px;
+        top:-10px;
+    }
+    75% {
+        left: 20px;
+        top:-40px;
+    }
+    100% {
+        left: 40px;
+        top:-23px;
+    }
+}
+
+@mixin fly-animation-two {
+    -webkit-animation: fly-two 0.7s;
+    animation: fly-one 0.7s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fly-two {
+    0% {
+        top: -4px;
+        left: 14px;
+    }
+    25% {
+        top:-10px;
+        left:-15px;
+    }
+    75% {
+        top:-40px;
+        left: 23px;
+
+    }
+    100% {
+        top:-23px;
+        left: 43px;
+    }
+}
+
+@keyframes fly-two {
+    0% {
+        top: -4px;
+        left: 14px;
+    }
+    25% {
+        top:-10px;
+        left:-15px;
+    }
+    75% {
+        top:-40px;
+        left: 23px;
+
+    }
+    100% {
+        top:-23px;
+        left: 43px;
+    }
+}
+
+// @mixin fly-animation-two {
+//     -webkit-animation: fly-two 0.9s;
+//     animation: fly-two 0.9s;
+//     -webkit-animation-iteration-count: infinite;
+//             animation-iteration-count: infinite;
+//     -webkit-animation-fill-mode: forwards;
+//             animation-fill-mode: forwards;
+// }
+
+// @-webkit-keyframes fly-two {
+//     0% {
+//         top: 0px;
+//         left: 15px;
+//     }
+//     10% {
+//         left: 10px;
+//         top: -45px;
+//     }
+//     40% {
+//         left: 40px;
+//         top:-23px;
+//     }
+//     100% {
+//         left:-12px;
+//         top:-10px;
+//     }
+// }
+
+// @keyframes fly-two {
+//     0% {
+//         top: 0px;
+//         left: 15px;
+//     }
+//     10% {
+//         left: 10px;
+//         top: -45px;
+//     }
+//     40% {
+//         left: 40px;
+//         top:-23px;
+//     }
+//     100% {
+//         left:-12px;
+//         top:-10px;
+//     }
+// }
+
+// @mixin fly-animation-three {
+//     -webkit-animation: fly-three 0.7s;
+//     animation: fly-two 0.7s;
+//     -webkit-animation-iteration-count: infinite;
+//             animation-iteration-count: infinite;
+//     -webkit-animation-fill-mode: forwards;
+//             animation-fill-mode: forwards;
+// }
+
+// @-webkit-keyframes fly-three {
+//     0% {
+//         left: -12px;
+//         top:-30px;
+//     }
+//     25% {
+//         left:24px;
+//         top:-30px;
+//     }
+//     75% {
+//         left: -6px;
+//         top:-25px;
+//     }
+//     100% {
+//         left:-3;
+//         top:-40px;
+//     }
+// }
+
+// @keyframes fly-three {
+//     0% {
+//         left: 6px;
+//         top:-17px;
+//     }
+//     25% {
+//         left:-12px;
+//         top:-25px;
+//     }
+//     75% {
+//         left: 20px;
+//         top:-40px;
+//     }
+//     100% {
+//         left: -3px;
+//         top:-18px;
+//     }
+// }
+
+
+
+
+
+
+
+

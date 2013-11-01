@@ -1,0 +1,46 @@
+<!-- @include _head -->
+<!-- @include _header -->
+
+	<section class="holder intro-holder home-intro-holder">
+		<section class="home-intro-row">
+			<div class="intro home-intro">
+				<h2 class="intro-tagline">
+					Let&rsquo;s Strip Down
+				</h2>
+				<p class="intro-code">
+					// The lightweight, responsive, plug &amp; play design framework
+				</p>
+			</div>
+		</section>
+		<img id="videoposter" src="img/poster.jpg" alt="" />
+		<video id="video" autoplay style="display:none;">
+			<source src="video/comp.webm" type="video/webm">
+			<source src="video/comp.mp4" type="video/mp4">
+			<img src="img/poster.jpg" alt="" />
+		</video>
+		<script>
+			document.getElementById('videoposter').style.display= "none";
+			document.getElementById('video').style.display= "block";
+		</script>
+	</section>
+	<section class="holder main-holder">
+		<div class="row main-row">
+			<article class="main-home-feature">
+				<figure class="icon-feather feature-symbol"></figure>
+				<h3>Strip Down to 0kb</h3>
+				<p>Because Chopstick does not compile one kilobyte without you asking for it, things remain simple. <em>No predefined styles, no predefined classes, no predefined HTML.</em> You want to keep everything <strong>light-weight</strong> and <strong>perfectly semantic</strong>, we make that easy.</p>
+			</article>
+			<article class="main-home-feature">
+				<figure class="icon-responsive feature-symbol"></figure>
+				<h3>Responsive, in a Heartbeat</h3>
+				<p>With great semantics come great responsiveness. Because we assume no class names, you can make your website responsive in a heartbeat. Start <strong>mobile first</strong>, and work your way up from there. It&rsquo;s just that good.</p>
+			</article>
+			<article class="main-home-feature">
+				<figure class="icon-plugin feature-symbol"></figure>
+				<h3>Plug in &amp; Play</h3>
+				<p>You like to use Bourbon? We have got you covered. You prefer Compass? Covered. You really love writing OOCSS? Got your back. SMACSS? Smack. B-E-M? Bam! You get the picture. Simply <strong>plug in your favourite workflow</strong> and start playing. No conflicts. Just <span class="icon-love" title="love">&hearts;</span>.</p>
+			</article>
+		</div>
+	</section>
+<!-- @include _doormat -->
+<!-- @include _footer -->
