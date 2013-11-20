@@ -1,105 +1,106 @@
-<!-- @include _head -->
-<!-- $title Features -->
-<!-- @include _header -->
-	<section class="holder intro-holder">
-		<div class="row intro-row">
-			<header class="intro main-intro">
-				<h1 class="main-title">
-					Features
-				</h1>
-			</header>
-		</div>
-	</section>
-	<section class="holder main-holder main-holder-section">
-		<div class="row main-row">
-			<article class="main-feature feature">
-				<div class="icon-angry feature-symbol"></div>
-				<h2 class="feature-title">
-					Make Every Design Different
-				</h2>
-				<p>Fed up with frameworks that make every website look and feel like a framework? <strong>You want a custom design</strong>, so you override defaults. Every time again. You have grown out of that. You are ready to leave Bootstrap or Foundation behind. Time to get proper support for your slick design skills.</p>
-			</article>
-			<article class="main-feature feature">
-				<div class="icon-grid feature-symbol"></div>
-				<h2 class="feature-title">
-					A Grid for Every Site
-				</h2>
-				<p>
-					Want to build a complex responsive news website, or just want to make a one-page design? Enter the grid. Chopstick gives you the possibility to use <strong>either a fixed or fluid lay-out</strong>. You can easily configure the number of colums  and gutter widths, and make your page lay-out perfect on every device.
-				</p>
+---
+layout: default
+title: Features
+section: features
+---
+
+<section class="holder intro-holder">
+	<div class="row intro-row">
+		<header class="intro main-intro">
+			<h1 class="main-title">
+				Features
+			</h1>
+		</header>
+	</div>
+</section>
+<section class="holder main-holder main-holder-section">
+	<div class="row main-row">
+		<article class="main-feature feature">
+			<div class="icon-angry feature-symbol"></div>
+			<h2 class="feature-title">
+				Make Every Design Different
+			</h2>
+			<p>Fed up with frameworks that make every website look and feel like a framework? <strong>You want a custom design</strong>, so you override defaults. Every time again. You have grown out of that. You are ready to leave Bootstrap or Foundation behind. Time to get proper support for your slick design skills.</p>
+		</article>
+		<article class="main-feature feature">
+			<div class="icon-grid feature-symbol"></div>
+			<h2 class="feature-title">
+				A Grid for Every Site
+			</h2>
+			<p>
+				Want to build a complex responsive news website, or just want to make a one-page design? Enter the grid. Chopstick gives you the possibility to use <strong>either a fixed or fluid lay-out</strong>. You can easily configure the number of colums  and gutter widths, and make your page lay-out perfect on every device.
+			</p>
 <div class="example"><pre><code class="language-css">.blog-detail {
-	@include box-(12, 1, 1);
-	// Span 12 columns
+@include box-(12, 1, 1);
+// Span 12 columns
 }
 
 @media (min-width: $bp1) {
-	.blog-detail {
-		@include box-(6, 1, 1);
-		// Span 6 columns
-	}
+.blog-detail {
+	@include box-(6, 1, 1);
+	// Span 6 columns
+}
 }
 </code></pre></div>
-			</article>
-			<article class="main-feature feature">
-				<div class="icon-section feature-symbol"></div>
-				<h2 class="feature-title">
-					Semantics Like a Boss
-				</h2>
-				<p>
-					You know the right class names and HTML hierarchy are essential when making future friendly sites and complex applications. Good semantics help your fellow designers and developers understand your code. With Chopstick, you <strong>use the naming conventions you love</strong>. We get out of the way.
-				</p>
-			</article>
-			<article class="main-feature feature">
-				<div class="icon-type feature-symbol"></div>
-				<h2 class="feature-title">
-					Typography with Meaning
-				</h2>
-				<p>
-					The era of digital typography has finally arrived. Almost every typeface is at our disposal for use on screen. But with great power comes great responsibility.
-				</p>
-				<p>
-					Text contains hierarchy. And you want to <strong>create hierarchy in a hassle-free and meaningful way</strong>. Including the latest font is not enough. You want to find a way to incorperate the golden ratio in your headers and paragraph text. Chopstick gets you going with a little help from our friend <strong>modular scale</strong>.
-				</p>
+		</article>
+		<article class="main-feature feature">
+			<div class="icon-section feature-symbol"></div>
+			<h2 class="feature-title">
+				Semantics Like a Boss
+			</h2>
+			<p>
+				You know the right class names and HTML hierarchy are essential when making future friendly sites and complex applications. Good semantics help your fellow designers and developers understand your code. With Chopstick, you <strong>use the naming conventions you love</strong>. We get out of the way.
+			</p>
+		</article>
+		<article class="main-feature feature">
+			<div class="icon-type feature-symbol"></div>
+			<h2 class="feature-title">
+				Typography with Meaning
+			</h2>
+			<p>
+				The era of digital typography has finally arrived. Almost every typeface is at our disposal for use on screen. But with great power comes great responsibility.
+			</p>
+			<p>
+				Text contains hierarchy. And you want to <strong>create hierarchy in a hassle-free and meaningful way</strong>. Including the latest font is not enough. You want to find a way to incorperate the golden ratio in your headers and paragraph text. Chopstick gets you going with a little help from our friend <strong>modular scale</strong>.
+			</p>
 <div class="example"><pre><code class="language-css">.title {
-	font-size: ms(3);
-	// Up 3 steps in modular scale
+font-size: ms(3);
+// Up 3 steps in modular scale
 }
 </code></pre></div>
-			</article>
-			<article class="main-feature feature">
-				<div class="icon-nav feature-symbol"></div>
-				<h2 class="feature-title">
-					Navigation Patterns
-				</h2>
-				<p>
-					You recognise a well designed website by its navigation. Chopstick contains the basics to create horizontal or list-style navigation. For your responsive design we have provided a <strong>clean mobile navigation example</strong>.
-				</p>
-				<p>
-					More <strong>navigational inspiration</strong>? Check out some of the work of Brad Frost at his <a href="http://patternlab.bradfrostweb.com">Pattern Lab</a>. Don&rsquo;t stick to our examples. Go create!
-				</p>
-			</article>
-			<article class="main-feature feature">
-				<div class="icon-alzheimer feature-symbol"></div>
-				<h2 class="feature-title">
-					Alzheimer-proof Boilerplate
-				</h2>
-				<p>
-					Some things are required in every site you make. It can be a pain to remember what meta-tags, conditional comments or favicon files you need. Chopstick is delivered with some <strong>nice boilerplate files to kick-start your project.</strong> Like Alzeheimer&rsquo;s medicine.
-				</p>
-				<p>
-					We can not, however, help your grandmother make tea. Feel free to <a href="https://github.com/wijs/chopstick/issues">file an issue though</a>.
-				</p>
-			</article>
-			<article class="main-feature feature">
-				<div class="icon-feather feature-symbol"></div>
-				<h2 class="feature-title">
-					// Only Include What You Need
-				</h2>
-				<p>
-					Remember we promised you zero kilobyte? All of these features are completely optional. <strong>If you do not need it, it will not be in your code.</strong> You have the freedom to use and abuse the framework to your benefit. You can use our complete wardrobe or choose to get completely naked!
-				</p>
-			</article>
-		</div>
-	</section>
-<!-- @include _doormat -->
-<!-- @include _footer -->
+		</article>
+		<article class="main-feature feature">
+			<div class="icon-nav feature-symbol"></div>
+			<h2 class="feature-title">
+				Navigation Patterns
+			</h2>
+			<p>
+				You recognise a well designed website by its navigation. Chopstick contains the basics to create horizontal or list-style navigation. For your responsive design we have provided a <strong>clean mobile navigation example</strong>.
+			</p>
+			<p>
+				More <strong>navigational inspiration</strong>? Check out some of the work of Brad Frost at his <a href="http://patternlab.bradfrostweb.com">Pattern Lab</a>. Don&rsquo;t stick to our examples. Go create!
+			</p>
+		</article>
+		<article class="main-feature feature">
+			<div class="icon-alzheimer feature-symbol"></div>
+			<h2 class="feature-title">
+				Alzheimer-proof Boilerplate
+			</h2>
+			<p>
+				Some things are required in every site you make. It can be a pain to remember what meta-tags, conditional comments or favicon files you need. Chopstick is delivered with some <strong>nice boilerplate files to kick-start your project.</strong> Like Alzeheimer&rsquo;s medicine.
+			</p>
+			<p>
+				We can not, however, help your grandmother make tea. Feel free to <a href="https://github.com/getchopstick/chopstick-boilerplate/issues">file an issue though</a>.
+			</p>
+		</article>
+		<article class="main-feature feature">
+			<div class="icon-feather feature-symbol"></div>
+			<h2 class="feature-title">
+				// Only Include What You Need
+			</h2>
+			<p>
+				Remember we promised you zero kilobyte? All of these features are completely optional. <strong>If you do not need it, it will not be in your code.</strong> You have the freedom to use and abuse the framework to your benefit. You can use our complete wardrobe or choose to get completely naked!
+			</p>
+		</article>
+	</div>
+</section>

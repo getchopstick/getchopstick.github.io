@@ -36,7 +36,7 @@
 	font-weight: bold;
 	text-indent: -9999px;
 	@include text-dimensions(16,1,1,0);
-	@include svg-bg("../images/logo", ".png", 0 50%, no-repeat);
+	@include svg-bg("../img/logo", ".png", 0 50%, no-repeat);
 
 	a {
 		color: $alpha-text-color;

@@ -1,206 +1,206 @@
-<!-- @include _head -->
-<!-- $title Documentation -->
-<!-- @include _header -->
-	<section class="holder intro-holder">
-		<div class="row intro-row">
-			<header class="intro main-intro">
-				<h1 class="main-title">
-					Docs
-				</h1>
-			</header>
-		</div>
-	</section>
-	<section class="holder main-holder">
-		<div class="row main-row">
-			<nav class="doc-feature-nav">
-				<ul>
-					<li>
-						<a href="#Install">Install</a>
-					</li>
-					<li>
-						<a href="#Use">Use</a>
-					</li>
-					<li>
-						<a href="#folder-structure">Folder Structure</a>
-					</li>
-					<li>
-						<a href="#content">Content</a>
+---
+layout: default
+title: Documentation
+section: Documentation
+---
 
-						<ul>
-							<li><a href="#functions">Functions</a></li>
-							<li><a href="#grid">Grid</a></li>
-							<li><a href="#patterns">Patterns</a></li>
-							<li><a href="#typography">Typography</a></li>
-							<li><a href="#user-interface-elements">User Interface Elements</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<div class="doc-features">
-				<article id="Install" class="doc-feature feature">
-					<h2 class="feature-title">
-						Install
-					</h2>
+<section class="holder intro-holder">
+	<div class="row intro-row">
+		<header class="intro main-intro">
+			<h1 class="main-title">
+				Docs
+			</h1>
+		</header>
+	</div>
+</section>
+<section class="holder main-holder">
+	<div class="row main-row">
+		<nav class="doc-feature-nav">
+			<ul>
+				<li>
+					<a href="#Install">Install</a>
+				</li>
+				<li>
+					<a href="#Use">Use</a>
+				</li>
+				<li>
+					<a href="#folder-structure">Folder Structure</a>
+				</li>
+				<li>
+					<a href="#content">Content</a>
 
-					<p>You can use GUI tool like <a href="http://incident57.com/codekit">CodeKit</a> or <a href="http://hammerformac.com">Hammer</a>. If you prefer the command line, you can <a href="http://sass-lang.com/download.html">install Sass</a>. Then simply use <code>sass --watch scss:css</code> and start designing.</p>
-				</article>
-				<article id="Use" class="doc-feature feature">
-					<h2 class="feature-title">
-						Use
-					</h2>
+					<ul>
+						<li><a href="#functions">Functions</a></li>
+						<li><a href="#grid">Grid</a></li>
+						<li><a href="#patterns">Patterns</a></li>
+						<li><a href="#typography">Typography</a></li>
+						<li><a href="#user-interface-elements">User Interface Elements</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="doc-features">
+			<article id="Install" class="doc-feature feature">
+				<h2 class="feature-title">
+					Install
+				</h2>
 
-					<p>We try to keep the code as modular as possible. Simplified put, you can look at it this way:</p>
+				<p>You can use GUI tool like <a href="http://incident57.com/codekit">CodeKit</a> or <a href="http://hammerformac.com">Hammer</a>. If you prefer the command line, you can <a href="http://sass-lang.com/download.html">install Sass</a>. Then simply use <code>sass --watch scss:css</code> and start designing.</p>
+			</article>
+			<article id="Use" class="doc-feature feature">
+				<h2 class="feature-title">
+					Use
+				</h2>
 
-					<p><code>Shared Library + Settings = Theme</code></p>
+				<p>We try to keep the code as modular as possible. Simplified put, you can look at it this way:</p>
 
-					<p>We have included a default theme that uses settings from the settings file + components from the shared library. <strong>You can remove the default theme</strong> and just use some components from the shared library, as you see fit. We don&rsquo;t like too much default generated code and neither should you.</p>
-				</article>
-				<article id="folder-structure" class="doc-feature feature">
-					<h2 class="feature-title">
-						Folder Structure
-					</h2>
+				<p><code>Shared Library + Settings = Theme</code></p>
 
-					<p>The SCSS part of Chopstick consists of <strong>two main folders</strong> (<code>scss/shared</code>, <code>scss/theme</code>) and <strong>two main files</strong> (<code>scss/_settings.scss</code>, <code>scss/screen.scss</code>).</p>
+				<p>We have included a default theme that uses settings from the settings file + components from the shared library. <strong>You can remove the default theme</strong> and just use some components from the shared library, as you see fit. We don&rsquo;t like too much default generated code and neither should you.</p>
+			</article>
+			<article id="folder-structure" class="doc-feature feature">
+				<h2 class="feature-title">
+					Folder Structure
+				</h2>
 
-					<ol>
-						<li>The <code>scss/shared</code> folder contains all of the necessary mixins, includes, extends and other stuff to help you code faster. <strong>Nothing in this folder is ever directly compiled to CSS.</strong> You need to reference components of Chopstick from within your theme&rsquo;s SCSS code.</li>
+				<p>The SCSS part of Chopstick consists of <strong>two main folders</strong> (<code>scss/shared</code>, <code>scss/theme</code>) and <strong>two main files</strong> (<code>scss/_settings.scss</code>, <code>scss/screen.scss</code>).</p>
 
-						<li>The <code>scss/theme</code> folder will contain your theme. Everything in this folder will be compiled to CSS when you <code>@import</code> it in <code>screen.scss</code>. We have prepared what we believe are some sensible defaults in the directory root and theme-specific modules in the <code>modules</code> folder, but <strong>feel free to delete anything in this folder</strong> you don&rsquo;t like. Also remember to remove the import rules from the <code>screen.scss</code> file.</li>
+				<ol>
+					<li>The <code>scss/shared</code> folder contains all of the necessary mixins, includes, extends and other stuff to help you code faster. <strong>Nothing in this folder is ever directly compiled to CSS.</strong> You need to reference components of Chopstick from within your theme&rsquo;s SCSS code.</li>
 
-						<li>The <code>scss/_settings.scss</code> file contains all of the <strong>settings and variables</strong> you can use throughout your project. Again, we have prepared some sensible defaults to work with our framework, but feel free to add your own variables as you see fit.</li>
+					<li>The <code>scss/theme</code> folder will contain your theme. Everything in this folder will be compiled to CSS when you <code>@import</code> it in <code>screen.scss</code>. We have prepared what we believe are some sensible defaults in the directory root and theme-specific modules in the <code>modules</code> folder, but <strong>feel free to delete anything in this folder</strong> you don&rsquo;t like. Also remember to remove the import rules from the <code>screen.scss</code> file.</li>
 
-						<li>The <code>scss/screen.scss</code> file will be compiled to <code>css/screen.css</code>. This is the file where you can easily <strong>turn modules on or off</strong> by adding comment slashes <code>//</code>.</li>
-					</ol>
-				</article>
-				<article id="content" class="doc-feature feature">
-					<h2 class="feature-title">
-						Content
-					</h2>
+					<li>The <code>scss/_settings.scss</code> file contains all of the <strong>settings and variables</strong> you can use throughout your project. Again, we have prepared some sensible defaults to work with our framework, but feel free to add your own variables as you see fit.</li>
 
-					<p>We have documented a lot inside the actual Chopstick source code. Chopstick ships with a default theme that already contains a lot of examples. We encourage you to download Chopstick and have a look there.</p>
+					<li>The <code>scss/screen.scss</code> file will be compiled to <code>css/screen.css</code>. This is the file where you can easily <strong>turn modules on or off</strong> by adding comment slashes <code>//</code>.</li>
+				</ol>
+			</article>
+			<article id="content" class="doc-feature feature">
+				<h2 class="feature-title">
+					Content
+				</h2>
 
-					<p>What follows is an overview of everything you can <code>@extend</code> or <code>@include</code>.</p>
+				<p>We have documented a lot inside the actual Chopstick source code. Chopstick ships with a default theme that already contains a lot of examples. We encourage you to download Chopstick and have a look there.</p>
 
-					<h3 id="functions">Functions</h3>
-					<dl>
-						<dt><code>em($pxval, $base)</code></dt>
-						<dd>Calculate em-value from pixel value and base value.</dd>
+				<p>What follows is an overview of everything you can <code>@extend</code> or <code>@include</code>.</p>
 
-						<dt><code>ms($value, $increment, $ratio)</code></dt>
-						<dd>Use the <a href="http://modularscale.com">modular scale</a>.</dd>
-					</dl>
+				<h3 id="functions">Functions</h3>
+				<dl>
+					<dt><code>em($pxval, $base)</code></dt>
+					<dd>Calculate em-value from pixel value and base value.</dd>
+
+					<dt><code>ms($value, $increment, $ratio)</code></dt>
+					<dd>Use the <a href="http://modularscale.com">modular scale</a>.</dd>
+				</dl>
 
 <div class="example"><pre><code class="language-css">.title {
-	font-size: ms(2);
-	// 2 steps up in modular scale
-	padding: em(20, 18);
-	// em-value of 20px, on font-size of 10px
+font-size: ms(2);
+// 2 steps up in modular scale
+padding: em(20, 18);
+// em-value of 20px, on font-size of 10px
 }
 </code></pre></div>
 
-					<h3 id="grid">Grid</h3>
-					<dl>
-						<dt><code>box-($amount, $left, $right)</code></dt>
-						<dd>Give an element a grid width (1, 2, 3, 8, . . .), gutter left &amp; right in ems.</dd>
+				<h3 id="grid">Grid</h3>
+				<dl>
+					<dt><code>box-($amount, $left, $right)</code></dt>
+					<dd>Give an element a grid width (1, 2, 3, 8, . . .), gutter left &amp; right in ems.</dd>
 
-						<dt><code>perc-col-($amount, $pl, $pr)</code></dt>
-						<dd>Give an element a grid width (1, 2, 3, 8, . . .), gutter left &amp; right in %.</dd>
+					<dt><code>perc-col-($amount, $pl, $pr)</code></dt>
+					<dd>Give an element a grid width (1, 2, 3, 8, . . .), gutter left &amp; right in %.</dd>
 
-						<dt><code>push-left($amount)</code></dt>
-						<dd>Push an element x grid values to left.</dd>
+					<dt><code>push-left($amount)</code></dt>
+					<dd>Push an element x grid values to left.</dd>
 
-						<dt><code>pull-right($amount)</code></dt>
-						<dd>Pull an element x grid values to right.</dd>
+					<dt><code>pull-right($amount)</code></dt>
+					<dd>Pull an element x grid values to right.</dd>
 
-						<dt><code>pull-left($amount)</code></dt>
-						<dd>Pull an element x grid values to left.</dd>
+					<dt><code>pull-left($amount)</code></dt>
+					<dd>Pull an element x grid values to left.</dd>
 
-						<dt><code>last-col</code></dt>
-						<dd>Indicate that the element is the last column.</dd>
+					<dt><code>last-col</code></dt>
+					<dd>Indicate that the element is the last column.</dd>
 
-						<dt><code>em-padding-lr($left, $right)</code></dt>
-						<dd>Calculate left and right padding in ems.</dd>
+					<dt><code>em-padding-lr($left, $right)</code></dt>
+					<dd>Calculate left and right padding in ems.</dd>
 
-						<dt><code>px-padding-lr($left, $right)</code></dt>
-						<dd>Calculate left and right padding in px.</dd>
+					<dt><code>px-padding-lr($left, $right)</code></dt>
+					<dd>Calculate left and right padding in px.</dd>
 
-						<dt><code>em-margin-lr($left, $right)</code></dt>
-						<dd>Calculate left and right margin in ems.</dd>
+					<dt><code>em-margin-lr($left, $right)</code></dt>
+					<dd>Calculate left and right margin in ems.</dd>
 
-						<dt><code>px-margin-lr($left, $right)</code></dt>
-						<dd>Calculate left and right margin in px.</dd>
+					<dt><code>px-margin-lr($left, $right)</code></dt>
+					<dd>Calculate left and right margin in px.</dd>
 
-						<dt><code>perc-margin-lr($left, $right)</code></dt>
-						<dd>Calculate left and right padding in %.</dd>
-					</dl>
+					<dt><code>perc-margin-lr($left, $right)</code></dt>
+					<dd>Calculate left and right padding in %.</dd>
+				</dl>
 
 <div class="example"><pre><code class="language-css">.blog-detail {
-	@include box-(12, 1, 1);
-	// Span 12 columns
+@include box-(12, 1, 1);
+// Span 12 columns
 }
 
 @media (min-width: $bp1) {
-	.blog-detail {
-		@include box-(6, 1, 1);
-		// Span 6 columns
-	}
+.blog-detail {
+	@include box-(6, 1, 1);
+	// Span 6 columns
+}
 }
 </code></pre></div>
 
-					<h3 id="patterns">Patterns</h3>
-					<dl>
-						<dt><code>clearfix</code></dt>
-						<dd>Use <code>@extend %clearfix;</code> to clearfix elements.</dd>
+				<h3 id="patterns">Patterns</h3>
+				<dl>
+					<dt><code>clearfix</code></dt>
+					<dd>Use <code>@extend %clearfix;</code> to clearfix elements.</dd>
 
-						<dt><code>list-nav</code></dt>
-						<dd>Use <code>@include list-nav;</code> to make a list navigation from an ul.</dd>
+					<dt><code>list-nav</code></dt>
+					<dd>Use <code>@include list-nav;</code> to make a list navigation from an ul.</dd>
 
-						<dt><code>horizontal-nav</code></dt>
-						<dd>Use <code>@include horizontal-nav;</code> to make a horizontal navigation from an ul.</dd>
+					<dt><code>horizontal-nav</code></dt>
+					<dd>Use <code>@include horizontal-nav;</code> to make a horizontal navigation from an ul.</dd>
 
-						<dt><code>word-break</code></dt>
-						<dd>Use <code>@extend %word-break;</code> to prevent for instance long URL&rsquo;s from breaking out of their container.</dd>
-					</dl>
+					<dt><code>word-break</code></dt>
+					<dd>Use <code>@extend %word-break;</code> to prevent for instance long URL&rsquo;s from breaking out of their container.</dd>
+				</dl>
 
 <div class="example"><pre><code class="language-css">ul.main-nav {
-	@include horizontal-nav;
+@include horizontal-nav;
 }
 </code></pre></div>
 
-					<h3 id="typography">Typography</h3>
-					<dl>
-						<dt><code>text-dimensions($fs, $lh, $mb, $pt, $pb)</code></dt>
-						<dd>Calculate text dimensions based on the values in your project settings. Order: font-size, line-height, margin-bottom, padding-top, padding-bottom.</dd>
+				<h3 id="typography">Typography</h3>
+				<dl>
+					<dt><code>text-dimensions($fs, $lh, $mb, $pt, $pb)</code></dt>
+					<dd>Calculate text dimensions based on the values in your project settings. Order: font-size, line-height, margin-bottom, padding-top, padding-bottom.</dd>
 
-						<dt><code>input-dimensions($fs, $lh, $mb, $pt, $pb)</code></dt>
-						<dd>Calculate input dimensions based on the values in your project settings. Order: font-size, line-height, margin-bottom, padding-top, padding-bottom.</dd>
-					</dl>
+					<dt><code>input-dimensions($fs, $lh, $mb, $pt, $pb)</code></dt>
+					<dd>Calculate input dimensions based on the values in your project settings. Order: font-size, line-height, margin-bottom, padding-top, padding-bottom.</dd>
+				</dl>
 
-					<h3 id="user-interface-elements">User Interface Elements</h3>
+				<h3 id="user-interface-elements">User Interface Elements</h3>
 
-					<dl>
-						<dt><code>button</code></dt>
-						<dd>Make a button. Use <code>@extend %button;</code>.<br /> Available types: button-big, button-small, button-tiny.</dd>
+				<dl>
+					<dt><code>button</code></dt>
+					<dd>Make a button. Use <code>@extend %button;</code>.<br /> Available types: button-big, button-small, button-tiny.</dd>
 
-						<dt><code>button-size</code></dt>
-						<dd>Button sizes. Use <code>@include button-size;</code>.<br /> Available types: button-big, button-small, button-tiny.</dd>
+					<dt><code>button-size</code></dt>
+					<dd>Button sizes. Use <code>@include button-size;</code>.<br /> Available types: button-big, button-small, button-tiny.</dd>
 
-						<dt><code>alert</code></dt>
-						<dd>Make an alert box. Use: <code>@extend alert;</code>.<br /> Available types: alert, alert-error, alert-success, alert-notice.</dd>
+					<dt><code>alert</code></dt>
+					<dd>Make an alert box. Use: <code>@extend alert;</code>.<br /> Available types: alert, alert-error, alert-success, alert-notice.</dd>
 
-						<dt><code>alert-type</code></dt>
-						<dd>Alert types. Use: <code>@include alert-type;</code>.<br /> Available types: alert, alert-error, alert-success, alert-notice.</dd>
+					<dt><code>alert-type</code></dt>
+					<dd>Alert types. Use: <code>@include alert-type;</code>.<br /> Available types: alert, alert-error, alert-success, alert-notice.</dd>
 
-						<dt><code>pagination</code></dt>
-						<dd>Standard, left aligned pagination.</dd>
+					<dt><code>pagination</code></dt>
+					<dd>Standard, left aligned pagination.</dd>
 
-						<dt><code>pagination-centered</code></dt>
-						<dd>Centered pagination.</dd>
-					</dl>
-				</article>
-			</div>
+					<dt><code>pagination-centered</code></dt>
+					<dd>Centered pagination.</dd>
+				</dl>
+			</article>
 		</div>
-	</section>
-
-<!-- @include _doormat -->
-<!-- @include _footer -->
+	</div>
+</section>

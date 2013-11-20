@@ -1,0 +1,3 @@
+title: Chopstick
+chopstickversion: v0.2
+exclude: ['_site', 'scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md']
