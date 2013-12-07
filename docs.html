@@ -52,9 +52,9 @@ section: Documentation
 					Use
 				</h2>
 
-				<p>We try to keep the code as modular as possible. Simplified put, you can look at it this way:</p>
+				<p>We try to keep the code as modular as possible. Simply put, you can look at it this way:</p>
 
-				<p><code>Shared Library + Settings = Theme</code></p>
+				<p><code>Shared Library + Settings + Patterns = Theme</code></p>
 
 				<p>We have included a default theme that uses settings from the settings file + components from the shared library. <strong>You can remove the default theme</strong> and just use some components from the shared library, as you see fit. We don&rsquo;t like too much default generated code and neither should you.</p>
 			</article>
@@ -88,6 +88,9 @@ section: Documentation
 				<dl>
 					<dt><code>em($pxval, $base)</code></dt>
 					<dd>Calculate em-value from pixel value and base value.</dd>
+
+					<dt><code>su($value)</code></dt>
+					<dd>Strip input from units. su(16px) returns 16.</dd>
 
 					<dt><code>ms($value, $increment, $ratio)</code></dt>
 					<dd>Use the <a href="http://modularscale.com">modular scale</a>.</dd>
