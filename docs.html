@@ -97,10 +97,10 @@ section: Documentation
 				</dl>
 
 <div class="example"><pre><code class="language-css">.title {
-font-size: ms(2);
-// 2 steps up in modular scale
-padding: em(20, 18);
-// em-value of 20px, on font-size of 18px
+	font-size: ms(2);
+	// 2 steps up in modular scale
+	padding: em(20, 18);
+	// em-value of 20px, on font-size of 18px
 }
 </code></pre></div>
 
@@ -141,15 +141,15 @@ padding: em(20, 18);
 				</dl>
 
 <div class="example"><pre><code class="language-css">.blog-detail {
-@include box-(12, 1, 1);
-// Span 12 columns
+	@include box-(12, 1, 1);
+	// Span 12 columns
 }
 
 @media (min-width: $bp1) {
-.blog-detail {
-	@include box-(6, 1, 1);
-	// Span 6 columns
-}
+	.blog-detail {
+		@include box-(6, 1, 1);
+		// Span 6 columns
+	}
 }
 </code></pre></div>
 
@@ -169,7 +169,7 @@ padding: em(20, 18);
 				</dl>
 
 <div class="example"><pre><code class="language-css">ul.main-nav {
-@include horizontal-nav;
+	@include horizontal-nav;
 }
 </code></pre></div>
 
