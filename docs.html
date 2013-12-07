@@ -153,7 +153,7 @@ section: Documentation
 }
 </code></pre></div>
 
-				<h3 id="patterns">Patterns</h3>
+				<h3 id="patterns">Mixins</h3>
 				<dl>
 					<dt><code>clearfix</code></dt>
 					<dd>Use <code>@extend %clearfix;</code> to clearfix elements.</dd>
@@ -175,6 +175,9 @@ section: Documentation
 
 				<h3 id="typography">Typography</h3>
 				<dl>
+					<dt><code>@mixin baseline-dimensions($msi, $pt, $pb, $l)</code></dt>
+					<dd>Calculate dimensions based on the $alpha-baseline-grid variable. Order: modular-scale-increment, padding-top, padding-bottom, leading.</dd>
+
 					<dt><code>text-dimensions($fs, $lh, $mb, $pt, $pb)</code></dt>
 					<dd>Calculate text dimensions based on the values in your project settings. Order: font-size, line-height, margin-bottom, padding-top, padding-bottom.</dd>
 
