@@ -153,7 +153,7 @@ section: Documentation
 }
 </code></pre></div>
 
-				<h3 id="patterns">Mixins</h3>
+				<h3 id="mixins">Mixins</h3>
 				<dl>
 					<dt><code>clearfix</code></dt>
 					<dd>Use <code>@extend %clearfix;</code> to clearfix elements.</dd>
@@ -166,16 +166,24 @@ section: Documentation
 
 					<dt><code>word-break</code></dt>
 					<dd>Use <code>@extend %word-break;</code> to prevent for instance long URL&rsquo;s from breaking out of their container.</dd>
+
+					<dt><code>text-color</code></dt>
+					<dd>Use <code>@include text-color(color);</code> to calculate whether text color should be black or white, based on an input color.</dd>
 				</dl>
 
 <div class="example"><pre><code class="language-css">ul.main-nav {
 	@include horizontal-nav;
 }
+
+.colored {
+	background-color: #FC0;
+	@include text-color(#FC0);
+}
 </code></pre></div>
 
 				<h3 id="typography">Typography</h3>
 				<dl>
-					<dt><code>@mixin baseline-dimensions($msi, $pt, $pb, $l)</code></dt>
+					<dt><code>baseline-dimensions($msi, $pt, $pb, $l)</code></dt>
 					<dd>Calculate dimensions based on the $alpha-baseline-grid variable. Order: modular-scale-increment, padding-top, padding-bottom, leading.</dd>
 
 					<dt><code>text-dimensions($fs, $lh, $mb, $pt, $pb)</code></dt>
@@ -188,23 +196,41 @@ section: Documentation
 				<h3 id="user-interface-elements">User Interface Elements</h3>
 
 				<dl>
-					<dt><code>button</code></dt>
-					<dd>Make a button. Use <code>@extend %button;</code>.<br /> Available types: button-big, button-small, button-tiny.</dd>
+					<dt><code>btn</code></dt>
+					<dd>Make a button.<br />
+					Use: <code>@extend %btn;</code>.</dd>
 
-					<dt><code>button-size</code></dt>
-					<dd>Button sizes. Use <code>@include button-size;</code>.<br /> Available types: button-big, button-small, button-tiny.</dd>
+					<dt><code>btn-[size]</code></dt>
+					<dd>Define button size: [s]mall, [m]edium, [l]arge.<br />
+					Use: <code>@include btn-[s/m/l];</code>.</dd>
+
+					<dt><code>btn-color</code></dt>
+					<dd>Generate button color.<br />
+					Use: <code>@mixin btn-color(base-color[,hover-color]);</code></dd>
+
+					<dt><code>baseline-dimensions-form($msi, $pt, $pb, $l)</code></dt>
+					<dd>Calculate dimensions for form elements based on the $alpha-baseline-grid variable.<br />
+					Use: <code>@include baseline-dimensions-form(modular-scale-increment, padding-top-amount, padding-bottom-amount, leading);</code></dd>
+
+					<dt><code>input-[size]</code></dt>
+					<dd>Define input size: [s]mall, [m]edium, [l]arge.<br />
+					Use: <code>@include input-[s/m/l];</code></dd>
 
 					<dt><code>alert</code></dt>
-					<dd>Make an alert box. Use: <code>@extend alert;</code>.<br /> Available types: alert, alert-error, alert-success, alert-notice.</dd>
+					<dd>Make an alert box.<br />
+					Use: <code>@extend alert;</code>.<br /> Available types: alert, alert-error, alert-success, alert-notice.</dd>
 
-					<dt><code>alert-type</code></dt>
-					<dd>Alert types. Use: <code>@include alert-type;</code>.<br /> Available types: alert, alert-error, alert-success, alert-notice.</dd>
+					<dt><code>alert-[type]</code></dt>
+					<dd>Define alert type.<br />
+					Use: <code>@include alert-[error/success/notice];</code></dd>
 
 					<dt><code>pagination</code></dt>
-					<dd>Standard, left aligned pagination.</dd>
+					<dd>Create left aligned pagination.<br />
+					Use: <code>@include pagination;</code></dd>
 
 					<dt><code>pagination-centered</code></dt>
-					<dd>Centered pagination.</dd>
+					<dd>Create centered pagination.<br />
+					Use: <code>@include pagination-centered;</code></dd>
 				</dl>
 			</article>
 		</div>
