@@ -5,11 +5,12 @@ gem 'github-pages'
 
 group :development do
 
-	# CSS Preprocessing
+	# Preprocessing
 	gem 'sass', "~> 3.2"
 	gem 'compass'
 	gem 'modular-scale', "~> 1.0.6"
 	gem 'jekyll', "~> 1.5.1"
+	gem 'kramdown'
 
 	# Guard Specific
 	gem 'guard'

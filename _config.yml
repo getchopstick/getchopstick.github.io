@@ -1,3 +1,4 @@
 title: Chopstick
 chopstickversion: v0.3
+markdown: kramdown
 exclude: ['_site', 'scss','*scss','Gem*','Guard*','*rb','.sass-cache','.git*','config.rb','*.md']
