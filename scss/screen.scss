@@ -1,44 +1,78 @@
-//
-//	Comment or uncomment whatever you need in this file.
-//
+/*
+ *  Chopstick index
+ *  ---
+ *  Chopstick is a framework based on the [ITCSS](http://itcss.io/)
+ *  architecture and a series of principles. It creates a structure
+ *  to easily set-up and build bespoke web projects.
+ *  ---
+ *
+ *  Settings: contains global variables and config switches
+ *  Tools: contains default mixins and functions
+ *  Generic: contains ground-zero styles (Normalize.css, resets, box-sizing)
+ *  Elements: contains unclassed HTML elements (type selectors)
+ *  Objects: contains cosmetic-free design patterns
+ *  Components: contains designed components, chunks of UI
+ *  Plugins: contains third-party plugin styles
+ *  Utilities: contains helpers and overrides
+ */
 
-// Settings: open and tweak this file.
+// Settings
+@import '../vendor/chopstick-settings/settings.global';
+@import '../vendor/chopstick-settings/settings.colors';
 
-	@import "settings";
+// Tools
+@import '../vendor/chopstick-tools/tools.functions';
+@import '../vendor/chopstick-tools/tools.mixins';
+@import '../vendor/chopstick-tools/tools.spacing';
+@import '../vendor/chopstick-tools/tools.typography';
 
-// Vendor Dependencies: do not delete this.
+/* Generic */
+@import '../vendor/chopstick-generic/generic.normalize';
+@import '../vendor/chopstick-generic/generic.reset';
+@import '../vendor/chopstick-generic/generic.box-sizing';
 
-	// @import "compass"; // http://compass-style.org/install
+/* Elements */
+@import '../vendor/chopstick-elements/elements.page';
+@import '../vendor/chopstick-elements/elements.typography';
+@import '../vendor/chopstick-elements/elements.images';
+@import '../vendor/chopstick-elements/elements.forms';
+@import '../vendor/chopstick-elements/elements.tables';
 
-// Shared: do not delete any of this.
+/* Objects */
+@import '../vendor/chopstick-objects/objects.grid';
+@import '../vendor/chopstick-objects/objects.flexbox';
+@import '../vendor/chopstick-objects/objects.media';
+@import '../vendor/chopstick-objects/objects.media-embed';
+@import '../vendor/chopstick-objects/objects.list';
+@import '../vendor/chopstick-objects/objects.tables';
 
-	@import "shared/grid";
-	@import "shared/typography";
-	@import "shared/patterns";
-	@import "shared/ui";
-	@import "shared/functions";
+/* Components */
+@import 'components.navigation';
+@import 'components.brand';
+@import 'components.row';
+@import 'components.icons';
+@import 'components.alerts';
+@import 'components.buttons';
+@import 'components.input';
+@import 'components.label';
+@import 'components.lists';
+@import 'components.pagination';
+@import 'components.cards';
+@import 'components.styleguide';
 
-// Theme: feel free to delete any or all.
+/* Plugins */
+@import 'plugins.syntax';
+@import 'plugins.googlemaps';
 
-	@import "theme/reset";
-	@import "theme/base";
-	@import "theme/animations";
-	@import "theme/frame";
-	@import "theme/forms";
-	@import "theme/usercontent";
-	@import "theme/fonts";
+/* Utilities */
+@import '../vendor/chopstick-utilities/utilities.widths';
+@import '../vendor/chopstick-utilities/utilities.push';
+@import '../vendor/chopstick-utilities/utilities.pull';
+@import '../vendor/chopstick-utilities/utilities.spacing';
+@import '../vendor/chopstick-utilities/utilities.colors';
+@import '../vendor/chopstick-utilities/utilities.layers';
+@import '../vendor/chopstick-utilities/utilities.states';
+@import '../vendor/chopstick-utilities/utilities.print';
+@import '../vendor/chopstick-utilities/utilities.debug';
 
-// Demo Modules: for demo purpose only. Replace this with your own modules.
-
-	@import "theme/components/buttons";
-
-	@import "theme/modules/main";
-	@import "theme/modules/home";
-	@import "theme/modules/docs";
-	@import "theme/modules/products";
-	@import "theme/modules/intro";
-	@import "theme/modules/prism";
-
-// Print
-
-	@media print {@import "theme/print";}
+@import 'shame';
