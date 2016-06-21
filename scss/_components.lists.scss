@@ -66,3 +66,24 @@
             color: palette(color-neutral, base);
        }
     }
+
+.c-list-ui {
+
+}
+
+    .c-list-ui__item {
+        & + & {
+            border-top: 1px dotted darken(palette(color-neutral),10);
+            @include margin-top(.5);
+            @include padding-top(.5);
+        }
+    }
+
+.c-list-footer {
+    display: flex;
+    justify-content: center;
+}
+
+    .c-list-footer__item {
+        @include margin-lr(1,1);
+    }

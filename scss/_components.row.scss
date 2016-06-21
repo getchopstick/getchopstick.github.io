@@ -5,15 +5,103 @@
 */
 
 .c-row {
-    @include padding-tb($alpha-leading,0);
     @include padding-lr($columns-gutter,$columns-gutter);
+
+    > *:last-child,
+    > *:last-child > *:last-child,
+    > *:last-child > *:last-child > *:last-child,
+    > *:last-child > *:last-child > *:last-child > *:last-child {
+        margin-bottom: 0;
+    }
+
+    @include mq(bp3) {
+        @include padding-lr($columns-gutter*2,$columns-gutter*2);
+    }
 }
 
 .c-row--alpha {
-    background-color: palette(color-neutral,x-light);
+    color: palette(color-neutral, x-light);
+    background-color: palette(color-alpha);
 }
 
 .c-row--beta {
-    color: palette(color-neutral,light);
-    background-color: palette(color-neutral,dark);
+    color: palette(color-alpha);
+}
+
+
+.c-row--light {
+    color: palette(color-neutral, dark);
+    background-color: palette(color-neutral, x-light);
+}
+
+.c-row--header {
+    @include padding-tb($alpha-leading,$alpha-leading);
+}
+
+.c-row--hero {
+    @include padding-tb($alpha-leading,$alpha-leading);
+
+    @include mq(bp4) {
+        @include padding-tb($beta-leading*3,$beta-leading*3);
+    }
+}
+
+.c-row--padding {
+    @include padding-tb($alpha-leading*2,$alpha-leading*2);
+
+    @include mq(bp4) {
+        @include padding-tb($alpha-leading*4,$alpha-leading*4);
+    }
+}
+
+.c-row--karate {
+    position: relative;
+    @include margin-tb(0,10);
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        content: '';
+        display: block;
+        background-image: url('../img/png/karate.png');
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include padding-tb(0,10);
+    }
+
+    &:before {
+        background-color: palette(color-neutral,x-light);
+        background-image: url('../img/png/karate-line.png');
+        background-position: center top;
+        background-size: 105% auto;
+        background-repeat: no-repeat;
+    }
+
+    &:after {
+        background-image: url('../img/png/karate-dot.png');
+        background-position: center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .svg &:before {
+        background-image: url('../img/svg/karate-line.svg');
+    }
+
+    .svg &:after {
+        background-image: url('../img/svg/karate-dot.svg');
+    }
+
+    @include mq(bp3) {
+        @include margin-tb(0,14);
+
+        &:before,
+        &:after {
+            @include padding-tb(0,14);
+        }
+    }
 }

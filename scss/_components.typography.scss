@@ -1,0 +1,38 @@
+.c-title {
+    text-transform: uppercase;
+    max-width: 10em;
+    @include text-dimensions($ms4,1.5);
+
+    @include mq(bp3) {
+        @include text-dimensions($ms7,2.5);
+    }
+}
+
+.c-lead {
+    @include text-dimensions($ms1,1);
+
+    @include mq(bp3) {
+        @include text-dimensions($ms3,1.3);
+    }
+}
+
+.c-code-title {
+    font-family: $beta-font-family;
+    font-weight: bold;
+}
+
+.c-code-step {
+    font-family: $beta-font-family;
+    font-weight: bold;
+    color: palette(color-beta);
+    display: inline-block;
+}
+
+.c-code {
+    @include text-dimensions($ms-1,1);
+}
+
+.c-copyright {
+    color: palette(color-alpha);
+    @include text-dimensions($ms-1,1);
+}

@@ -28,7 +28,7 @@
     white-space: nowrap; /* [3] */
     border-radius: $radius;
     border-style: solid;
-    border-width: 1px;
+    border-width: $border-width;
     transition-duration: .1s;
     transition-timing-function: ease-in-out;
     transition-property: background, color, border;
@@ -36,6 +36,7 @@
     line-height: normal;
     appearance: none;
     box-shadow: none;
+    text-decoration: none;
     -webkit-font-smoothing: antialiased; /* [4] */
     -moz-osx-font-smoothing: grayscale; /* [4] */
 
@@ -89,7 +90,8 @@
 
 .c-button--lg {
     @include padding-lr(1.25,1.25);
-    @include input-dimensions($alpha-font-size,1,0,1,1);
+    @include input-dimensions($alpha-font-size,1,0,1,1.1);
+
 }
 
 // Button colors

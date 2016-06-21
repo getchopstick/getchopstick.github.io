@@ -17,8 +17,8 @@
  */
 
 // Settings
-@import '../vendor/chopstick-settings/settings.global';
-@import '../vendor/chopstick-settings/settings.colors';
+@import 'settings.colors';
+@import 'settings.global';
 
 // Tools
 @import '../vendor/chopstick-tools/tools.functions';
@@ -50,6 +50,8 @@
 @import 'components.navigation';
 @import 'components.brand';
 @import 'components.row';
+@import 'components.typography';
+@import 'components.links';
 @import 'components.icons';
 @import 'components.alerts';
 @import 'components.buttons';
@@ -65,6 +67,7 @@
 @import 'plugins.googlemaps';
 
 /* Utilities */
+@import '../vendor/chopstick-utilities/utilities.align';
 @import '../vendor/chopstick-utilities/utilities.widths';
 @import '../vendor/chopstick-utilities/utilities.push';
 @import '../vendor/chopstick-utilities/utilities.pull';

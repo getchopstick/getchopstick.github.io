@@ -1,0 +1,54 @@
+.c-link {
+    position: relative;
+    padding-left: 30px;
+    text-decoration: none;
+
+    &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.c-link--github {
+    &:before {
+        background-image: url('../img/png/github.png');
+    }
+
+    .svg &:before {
+        background-image: url('../img/svg/github.svg');
+    }
+}
+
+.c-link--facebook {
+    &:before {
+        background-image: url('../img/png/facebook.png');
+    }
+
+    .svg &:before {
+        background-image: url('../img/svg/facebook.svg');
+    }
+}
+
+.c-link--twitter {
+    &:before {
+        background-image: url('../img/png/twitter.png');
+    }
+
+    .svg &:before {
+        background-image: url('../img/svg/twitter.svg');
+    }
+}
+
+.c-link--documentation {
+    &:before {
+        background-image: url('../img/png/documentation.png');
+    }
+
+    .svg &:before {
+        background-image: url('../img/svg/documentation.svg');
+    }
+}

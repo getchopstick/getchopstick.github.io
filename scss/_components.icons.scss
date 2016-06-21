@@ -6,24 +6,37 @@
 
 .c-icon {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 80px;
+    height: 80px;
     position: relative;
-    top: 1px;
+    top: 0px;
     background-repeat: no-repeat;
     background-position: center top;
 
+    @include margin-tb(1,1);
     @include hide-text;
 }
 
-.c-icon--toggle {
-    background-image: url('../img/png/toggle--sprite.png');
+.c-icon--scalable {
+    background-image: url('../img/png/scalable.png');
 
     .svg & {
-        background-image: url('../img/svg/toggle--sprite.svg');
+        background-image: url('../img/svg/scalable.svg');
     }
+}
 
-    .is-toggled & {
-        background-position: center -46px;
+.c-icon--composable {
+    background-image: url('../img/png/modular.png');
+
+    .svg & {
+        background-image: url('../img/svg/modular.svg');
+    }
+}
+
+.c-icon--simple {
+    background-image: url('../img/png/simplicity.png');
+
+    .svg & {
+        background-image: url('../img/svg/simplicity.svg');
     }
 }
