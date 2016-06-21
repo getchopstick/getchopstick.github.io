@@ -40,10 +40,10 @@
     }
 
     .c-card__body--code {
-        overflow: hidden;
+        overflow: auto;
 
         code {
-            word-break: break-all;
+            word-break: normal;
         }
     }
 
