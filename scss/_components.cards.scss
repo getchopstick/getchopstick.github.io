@@ -40,7 +40,11 @@
     }
 
     .c-card__body--code {
-        overflow-x: auto;
+        overflow: hidden;
+
+        code {
+            word-break: break-all;
+        }
     }
 
     .c-card__footer {
