@@ -1,0 +1,39 @@
+{
+  "name": "chopstick-objects",
+  "description": "Chopstick objects layer",
+  "dependencies": {
+    "chopstick-settings": ">=0.7.3",
+    "chopstick-tools": ">=0.7.2"
+  },
+  "keywords": [
+    "front-end",
+    "objects",
+    "css",
+    "scss",
+    "framework",
+    "ITCSS"
+  ],
+  "authors": [
+    "Wijs <info@wijs.be> (http://wijs.be)"
+  ],
+  "homepage": [
+    "http://getchopstick.com/"
+  ],
+  "licence": "MIT",
+  "ignore": [
+    ".git",
+    ".editorconfig",
+    ".npmignore",
+    "package.json"
+  ],
+  "version": "0.7.5",
+  "_release": "0.7.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.7.5",
+    "commit": "b16b24b8d94d75b9692070348080f32f6e610709"
+  },
+  "_source": "https://github.com/getchopstick/chopstick-objects.git",
+  "_target": ">=0.7.5",
+  "_originalSource": "chopstick-objects"
+}
