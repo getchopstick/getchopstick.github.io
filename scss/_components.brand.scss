@@ -54,66 +54,66 @@
     position: relative;
 }
 
-    @keyframes wingLeft {
-        0% {
-            transform: rotate(-150deg);
-        }
-
-        50% {
-            transform: rotate(-110deg);
-        }
-
-        100% {
-            transform: rotate(-150deg);
-        }
+@keyframes wingLeft {
+    0% {
+        transform: rotate(-150deg);
     }
 
-    @keyframes wingRight {
-        0% {
-            transform: rotate(150deg);
-        }
-
-        50% {
-            transform: rotate(110deg);
-        }
-
-        100% {
-            transform: rotate(150deg);
-        }
+    50% {
+        transform: rotate(-110deg);
     }
 
-    @keyframes flying {
-        0% {
-            top: 0;
-            right: 32px;
-        }
-
-        20% {
-            top: 4em;
-            right: 5em;
-        }
-
-        40% {
-            top: 2em;
-            right: -3em;
-        }
-
-        60% {
-            top: -1.5em;
-            right: -.5em;
-        }
-
-        80% {
-            top: -50px;
-            right: 60px;
-        }
-
-
-        100% {
-            top: -12px;
-            right: 32px;
-        }
+    100% {
+        transform: rotate(-150deg);
     }
+}
+
+@keyframes wingRight {
+    0% {
+        transform: rotate(150deg);
+    }
+
+    50% {
+        transform: rotate(110deg);
+    }
+
+    100% {
+        transform: rotate(150deg);
+    }
+}
+
+@keyframes flying {
+    0% {
+        top: 0;
+        right: 32px;
+    }
+
+    20% {
+        top: 4em;
+        right: 5em;
+    }
+
+    40% {
+        top: 2em;
+        right: -3em;
+    }
+
+    60% {
+        top: -1.5em;
+        right: -.5em;
+    }
+
+    80% {
+        top: -50px;
+        right: 60px;
+    }
+
+
+    100% {
+        top: -12px;
+        right: 32px;
+    }
+}
 
     .c-chopstick__logo {
         display: none;
