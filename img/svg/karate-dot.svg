@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="470px" height="240px" viewBox="0 0 470 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>karate-dot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="karate-dot" fill="#DA2327">
+            <ellipse id="Oval-1" cx="234.599215" cy="-4.8404309" rx="75.5992155" ry="76.1595691"></ellipse>
+            <polygon id="Line" stroke="#DA2327" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="265.319375 17.1556531 437.31209 112.9672 437.675252 77.7086991 277.552603 9.22831416 -258.38841 -305.19133 -264.993077 -309.0328 -272.619489 -295.725557 -266.014822 -291.884087"></polygon>
+            <polygon id="Line" stroke="#DA2327" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="236.140475 4.73091381 342.666965 195.608059 361.777995 167.944717 250.236266 0.638595666 -29.1095646 -486.788885 -32.6691689 -493 -45 -485.828023 -41.4403957 -479.616908"></polygon>
+            <polygon id="Line" stroke="#DA2327" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="229.855862 -13.5476116 216.858255 225 256.500958 218.453026 243.50335 -13.997716 243.50335 -553.125677 243.50335 -560 229.855862 -560 229.855862 -553.125677"></polygon>
+            <polygon id="Line" stroke="#DA2327" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="193.807403 51.9385462 120 163.893341 159.451626 157.404409 205.476359 60.2654218 515.457289 -480.616908 519.016894 -486.828023 506.686063 -494 503.126458 -487.788885"></polygon>
+            <polygon id="Line" stroke="#DA2327" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="226.043873 -9.67929046 34.4249559 96.8039581 41.1516741 127.902986 193.172674 25.4449785 694.430862 -264.971348 700.256371 -268.359637 693.529653 -280.097014 687.704144 -276.708725"></polygon>
+        </g>
+    </g>
+</svg>

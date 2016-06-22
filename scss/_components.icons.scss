@@ -1,0 +1,42 @@
+/*
+    Components: Icons
+    ---
+    UI icons
+*/
+
+.c-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @include margin-tb(1,1);
+    @include hide-text;
+}
+
+.c-icon--scalable {
+    background-image: url('../img/png/scalable.png');
+
+    .svg & {
+        background-image: url('../img/svg/scalable.svg');
+    }
+}
+
+.c-icon--composable {
+    background-image: url('../img/png/modular.png');
+
+    .svg & {
+        background-image: url('../img/svg/modular.svg');
+    }
+}
+
+.c-icon--simple {
+    background-image: url('../img/png/simplicity.png');
+
+    .svg & {
+        background-image: url('../img/svg/simplicity.svg');
+    }
+}

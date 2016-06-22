@@ -1,0 +1,174 @@
+//
+//  Settings: Chopstick settings
+//  ---
+//  Your default settings
+//
+
+// ---
+// Typography
+// ---
+
+// manual modular scale font sizes
+// based on http://modularscale.com/scale/?px1=16&px2=18&ra1=1.333&ra2=0
+
+$ms-3                       : 11;
+$ms-2                       : 12;
+$ms-1                       : 14;
+$ms0                        : 18;
+$ms1                        : 21;
+$ms2                        : 24;
+$ms3                        : 30;
+$ms4                        : 42;
+$ms5                        : 48;
+$ms6                        : 56;
+$ms7                        : 67;
+$ms8                        : 75;
+
+// Basic font settings
+
+$alpha-font-family          : "Source Sans Pro", sans-serif;
+$beta-font-family           : monospace;
+
+$alpha-font-size            : $ms0;
+
+$alpha-font-weight          : 400;
+$beta-font-weight           : 600;
+$gamma-font-weight          : 900;
+
+$alpha-line-height          : 1.5;
+
+$alpha-leading              : 1;
+$beta-leading               : 2;
+
+// ---
+// UI
+// ---
+
+$radius                     : 0;
+$border-width               : 2px;
+$border-style               : solid;
+
+
+// ---
+// Z-indexes
+// ---
+
+$z-indexes: (
+    alpha                   : 1,
+    beta                    : 2,
+    gamma                   : 3,
+    delta                   : 4,
+    epsilon                 : 5
+);
+
+// ---
+// Breakpoints
+// ---
+
+$breakpoints: (
+    bp1                     : 320/16*1em,
+    bp2                     : 480/16*1em,
+    bp3                     : 680/16*1em,
+    bp4                     : 960/16*1em,
+    bp5                     : 1140/16*1em
+);
+
+// ---
+// Grid
+// ---
+
+// 1 times the $alpha-font-size. It's calculated in rem in _tools.spacing.scss
+$columns-gutter             : 1;
+
+// Define the amount of columns in the grid
+$columns: (
+    2,
+    3,
+    4,
+    5,
+    6
+);
+
+// ---
+// Increments
+// ---
+
+$increments: (
+    alpha                   : 0,
+    beta                    : .5,
+    gamma                   : 1,
+    delta                   : 1.5,
+    epsilon                 : 2
+);
+
+// ---
+// Animations
+// ---
+
+$animation-duration-alpha   : .1s;
+$animation-duration-beta    : .2s;
+$animation-duration-gamma   : .3s;
+$animation-easing-alpha     : ease-in-out;
+$animation-easing-beta      : cubic-bezier(.68, -.55, .265, 1.55); // bouncy
+
+// ---
+// Tools
+// ---
+
+$debug-mode                 : false; // toggles the debug mode
+
+
+// ---
+// Overrides
+// ---
+
+$html-background-color         : palette(color-beta);
+$body-color                    : palette(color-neutral, dark);
+
+$grid-max-width                : map-get($breakpoints,bp6) !default;
+$grid-gutter                   : $columns-gutter !default;
+
+$h1-font-family                : $alpha-font-family !default;
+$h1-font-weight                : $gamma-font-weight !default;
+$h1-font-size                  : $ms6 !default;
+$h1-line-height                : 2 !default;
+$h1-margin-bottom              : $alpha-leading !default;
+
+$h2-font-family                : $alpha-font-family !default;
+$h2-font-weight                : $gamma-font-weight !default;
+$h2-font-size                  : $ms3 !default;
+$h2-line-height                : 1.5 !default;
+$h2-margin-bottom              : $alpha-leading !default;
+
+$h3-font-family                : $alpha-font-family !default;
+$h3-font-weight                : $gamma-font-weight !default;
+$h3-font-size                  : $ms1 !default;
+$h3-line-height                : 1.25 !default;
+$h3-margin-bottom              : $alpha-leading !default;
+
+$h4-font-family                : $alpha-font-family !default;
+$h4-font-weight                : $alpha-font-weight !default;
+$h4-font-size                  : $ms2 !default;
+$h4-line-height                : 1.25 !default;
+$h4-margin-bottom              : $alpha-leading !default;
+
+$h5-font-family                : $alpha-font-family !default;
+$h5-font-weight                : $alpha-font-weight !default;
+$h5-font-size                  : $ms2 !default;
+$h5-line-height                : 1 !default;
+$h5-margin-bottom              : $alpha-leading !default;
+
+$h6-font-family                : $alpha-font-family !default;
+$h6-font-weight                : $alpha-font-weight !default;
+$h6-font-size                  : $ms1 !default;
+$h6-line-height                : 1 !default;
+$h6-margin-bottom              : $alpha-leading !default;
+
+$link-color                    : palette(color-alpha) !default;
+$link-color--visited           : palette(color-alpha) !default;
+$link-color--hover             : palette(color-alpha) !default;
+$link-color--focus             : palette(color-alpha) !default;
+
+$link-font-weight              : $beta-font-weight !default;
+$link-decoration               : underline !default;
+$link-decoration--hover        : none !default;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+{% include generic.head.html %}
+
+<body class="c-clouds">
+
+    <!-- Deprecated browser alert -->
+    {% include components.browser-alert.html %}
+    <!-- End deprecated browser alert -->
+
+    <!-- Page header -->
+    {% include components.header.html %}
+    <!-- End page header -->
+
+    {{ content }}
+
+    <!-- Page footer -->
+    {% include components.footer.html %}
+    <!-- End page footer -->
+
+    <!-- Footer javascript -->
+    {% include generic.javascript.html %}
+    <!-- End footer javascript -->
+
+</body>
+</html>

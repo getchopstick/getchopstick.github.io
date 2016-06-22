@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>scalable</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="scalable" stroke-width="4">
+            <path d="M32,75 L11.2,75.1 C8.6,75.1 6.5,72.8 6.5,70.1 L6.5,9.9 C6.5,7.1 8.6,4.9 11.2,4.9 L30.9,5" id="Shape" stroke="#221F1F" fill="#FEF5CC"></path>
+            <path d="M32,75 L32,5" id="Shape" stroke="#221F1F"></path>
+            <path d="M24.2,4.9 L31.2,4.9" id="Shape" stroke="#221F1F"></path>
+            <path d="M41.8,4.9 L60.5,4.9" id="Shape" stroke="#221F1F" stroke-dasharray="13.4494,10.5674"></path>
+            <polyline id="Shape" stroke="#221F1F" points="65.8 4.9 72.8 4.9 72.8 11.9"></polyline>
+            <path d="M72.8,22.1 L72.8,63" id="Shape" stroke="#221F1F" stroke-dasharray="12.8851,10.124"></path>
+            <polyline id="Shape" stroke="#221F1F" points="72.8 68.1 72.8 75.1 65.8 75.1"></polyline>
+            <path d="M55.3,75.1 L36.5,75.1" id="Shape" stroke="#221F1F" stroke-dasharray="13.4494,10.5674"></path>
+            <path d="M31.2,75.1 L24.2,75.1" id="Shape" stroke="#221F1F"></path>
+            <path d="M33,40 L57.6,40" id="Shape" stroke="#221F1F"></path>
+            <polyline id="Path-66" stroke="#231F1F" points="49 31.5 57.5827704 40.0827704 49 48.4057617"></polyline>
+        </g>
+    </g>
+</svg>

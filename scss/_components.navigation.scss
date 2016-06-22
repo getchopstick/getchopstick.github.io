@@ -1,0 +1,17 @@
+/*
+    Components: Navigation
+    ---
+    Site navigation, breadcrumbs, etc.
+*/
+
+.c-nav-main {
+    width: 100%;
+    float: left;
+    font-family: $alpha-font-family;
+
+    @include mq(bp1) {
+        width: auto;
+        float: right;
+        @include margin-tb(1.2,1.2);
+    }
+}

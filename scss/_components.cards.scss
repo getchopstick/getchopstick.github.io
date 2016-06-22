@@ -1,0 +1,53 @@
+/*
+    Components: Cards
+    ---
+    A card displays site content in a manner similar to a playing card.
+*/
+
+.c-card {
+    min-height: 100%;
+    @include margin-bottom(1);
+}
+
+    // Reset bottom margins on children to make equal paddings possible
+    .c-card > *:last-child,
+    .c-card > *:last-child > *:last-child,
+    .c-card > *:last-child > *:last-child > *:last-child,
+    .c-card__body > *:last-child,
+    .c-card__body > *:last-child > *:last-child,
+    .c-card__body > *:last-child > *:last-child > *:last-child {
+        margin-bottom: 0;
+    }
+
+.c-card--alpha {
+    color: palette(color-neutral,x-light);
+    background-color: palette(color-neutral,dark);
+    box-shadow: 9px 9px 0 rgba(palette(color-neutral,dark),.2);
+}
+
+    .c-card__body {
+        @include padding-tb(1,1.6);
+        @include padding-lr(1.2,1.2);
+    }
+
+    .c-card__body--light {
+        color: palette(color-neutral,dark);
+        background-color: palette(color-neutral,x-light);
+    }
+
+    .c-card__body--divider {
+        border-top: 1px dotted palette(color-neutral,light);
+    }
+
+    .c-card__body--code {
+        overflow: auto;
+
+        code {
+            word-break: normal;
+        }
+    }
+
+    .c-card__footer {
+        @include padding-tb(1,1.6);
+        @include padding-lr(1,1);
+    }

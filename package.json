@@ -1,0 +1,26 @@
+{
+  "name": "Getchopstick",
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:getchopstick/getchopstick.github.io.git"
+  },
+  "description": "Marketing website and documentation for Chopstick and the Chopstick boilerplate.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "browser-sync": "2.12.8",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-sass": "2.3.1",
+    "gulp-scss-lint": "0.4.0",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-svg2png": "1.0.0",
+    "gulp-uglyfly": "1.4.2",
+    "require-dir": "0.3.0"
+  }
+}
