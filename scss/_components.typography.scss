@@ -9,6 +9,7 @@
 }
 
 .c-lead {
+    max-width: 35em;
     @include text-dimensions($ms1,1);
 
     @include mq(bp3) {
