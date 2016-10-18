@@ -85,7 +85,7 @@
 @keyframes flying {
     0% {
         top: 0;
-        right: 32px;
+        right: 102px;
     }
 
     20% {
@@ -105,13 +105,13 @@
 
     80% {
         top: -50px;
-        right: 60px;
+        right: 160px;
     }
 
 
     100% {
         top: -12px;
-        right: 32px;
+        right: 102px;
     }
 }
 
@@ -119,7 +119,7 @@
         display: none;
         position: absolute;
         top: -12px;
-        right: 32px;
+        right: 102px;
 
         animation-duration: 2s;
         animation-iteration-count: infinite;
